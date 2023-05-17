@@ -1,0 +1,15 @@
+.App{
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  font-size: 12px;
+  align-items: center;
+}
+.div_header{
+  height: 102px;
+  float: left;
+}
+ul{
+  list-style-type: none;
+  padding-inline-start: 0px;
+}

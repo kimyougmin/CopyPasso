@@ -1,0 +1,40 @@
+.bodyHeader{
+    width: 100%;
+}
+.fleft{
+    width: 282px;
+    height: 102px;
+    float: left;
+}
+.fleft > img {
+    margin: 34px 0 0 15px;
+}
+.fright{
+    float: right;
+}
+.fright > img{
+    margin: 34px 20px 0 15px;
+}
+.sub_nav{
+    float: left;
+    width: 100%;
+    height: 39px;
+    clear: both;
+
+}
+.both{
+    float: left;
+    width: 100%;
+    height: 39px;
+    display: inline-flex;
+    background-image: url("/public/top/menu_bg_new.gif");
+}
+.oivine{
+    float: left;
+}
+.bg{
+    width: 30%;
+}
+.trvel{
+
+}

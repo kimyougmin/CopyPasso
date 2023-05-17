@@ -1,0 +1,12 @@
+.topRight{
+    display: flex;
+    float: left;
+    margin-inline-start: 15px;
+}
+.topRight > ul{
+    white-space: nowrap;
+}
+.topRight > ul > li {
+    margin: 0 10vm 0 10vm;
+    display: inline-block;
+}

@@ -1,0 +1,22 @@
+.navigationBar{
+    display: flex;
+    background-image: url("/public/common:top/bike_top_bg.gif");
+    background-size: 100% 32px;
+}
+.navigationBar > img{
+    height: 32px;
+    padding: 0px;
+    width: 50%;
+    display: table-cell;
+    vertical-align: inherit;
+}
+.navigationBar > div{
+    height: 32px;
+    display: flex;
+}
+.nav_Left > ul{
+    float: left;
+    width: 446px;
+    padding: 0px;
+    margin-top: 7px;
+}

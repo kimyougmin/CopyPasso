@@ -1,0 +1,43 @@
+.top{
+    display: flex;
+    float: left;
+    height: 107px;
+    margin: 5px 0 0 0;
+    padding: 0;
+}
+.hub{
+    width: 225px;
+    height: 103px;
+    border: 1px solid #d7d7d7;
+}
+.hub > ul{
+    list-style-type: none;
+    padding-inline-start: 5px;
+    margin-block-start: 5px;
+    margin-block-end: 0px;
+    display: flex;
+}
+.hub > ul >.bRight{
+    width: 123px;
+}
+.thumb{
+    margin-top: 5px;
+    width: 95px;
+    height: 65px;
+    border: 2px solid #d7d7d7;
+}
+.thumb > img{
+    width: 95px;
+    height: 65px;
+}
+.bRight > li{
+    margin-top: 5px;
+    margin-inline-start: 3px;
+}
+.bRight > .name{
+    font-size: 5px;
+    margin: 8px 0 18px 65px;
+}
+.bRight > .content{
+    font-size: 8px;
+}
