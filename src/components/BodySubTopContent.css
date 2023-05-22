@@ -1,0 +1,37 @@
+.subTop{
+    float: left;
+    margin-top: 13px;
+    margin-right: 29px;
+    width: 31%;
+    height: 215px;
+}
+dd{
+    margin-inline-start: 0;
+}
+.subTopList{
+}
+.subTopList > dl > .thumb{
+    width: 95%;
+    height: 135px;
+    margin-top: 10px;
+}
+.subTopList > dl > .thumb > img{
+    width: 100%;
+    height: 135px;
+}
+.subTopList > dl >  .name{
+    width: 223px;
+    height: 20px;
+    font-weight: bold;
+    font-size: 13px;
+    padding: 10px 0 0 3px;
+}
+.subTopList > dl > .titleEllipsis{
+    width: 223px;
+    height: 20px;
+    padding: 0 0 0 3px;
+    color: #959595;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}

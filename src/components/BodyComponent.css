@@ -9,3 +9,11 @@
 .AppBody > .top{
     display: flex;
 }
+.AppBody > .content{
+    width: 80%;
+    height: 100%;
+}
+.AppBody > .right{
+    width: 30%;
+    height: 100%;
+}

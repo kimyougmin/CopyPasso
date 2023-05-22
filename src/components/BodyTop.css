@@ -1,4 +1,5 @@
 .top{
+    width: 100%;
     display: flex;
     float: left;
     height: 107px;
@@ -6,7 +7,7 @@
     padding: 0;
 }
 .hub{
-    width: 225px;
+    width: 30%;
     height: 103px;
     border: 1px solid #d7d7d7;
 }
@@ -22,7 +23,7 @@
 }
 .thumb{
     margin-top: 5px;
-    width: 95px;
+    width: 45%;
     height: 65px;
     border: 2px solid #d7d7d7;
 }
@@ -36,8 +37,10 @@
 }
 .bRight > .name{
     font-size: 5px;
-    margin: 8px 0 18px 65px;
+    margin: 8px 0 18px 55px;
+    overflow: hidden;
 }
 .bRight > .content{
     font-size: 8px;
+    overflow: hidden;
 }

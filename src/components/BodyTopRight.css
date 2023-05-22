@@ -1,4 +1,5 @@
 .topRight{
+    width: 70%;
     display: flex;
     float: left;
     margin-inline-start: 15px;
@@ -9,4 +10,7 @@
 .topRight > ul > li {
     margin: 0 10vm 0 10vm;
     display: inline-block;
+}
+.topRight > img{
+    width: 100%;
 }

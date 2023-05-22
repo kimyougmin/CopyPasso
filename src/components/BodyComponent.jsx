@@ -7,8 +7,8 @@ import BodySubTop from "./BodySubTop";
 const BodyComponent = () => {
     return (
         <div className="AppBody">
+            <BodyHeader/>
             <div className={"content"}>
-                <BodyHeader/>
                 <BodyTop/>
                 <BodySubTop/>
             </div>
