@@ -11,5 +11,11 @@
 }
 ul{
   list-style-type: none;
-  padding-inline-start: 0px;
+  padding-inline-start: 0em;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+}
+dl{
+  margin-block-start: 0;
+  margin-block-end: 0;
 }
