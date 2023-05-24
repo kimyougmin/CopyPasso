@@ -19,6 +19,7 @@
 .typeNew > .lastHand{
     margin-right: 0;
 }
+
 .PopularList{
     display: flex;
     flex-wrap: wrap;
@@ -28,9 +29,13 @@
     border: 1px solid #d7d7d7;
     background-color: #f7f7f7;
 }
-.PopularList > ul {
-    padding-left: 4%;
-    width: 20%;
+.list {
+    width: 24%;
+    height: 30%;
+}
+.list > ul {
+    padding-left: 20%;
+    width: 80%;
 }
 .P_ListLi{
     margin-top: 25px;
@@ -40,7 +45,7 @@
 .P_ListLi > dl > dt{
     border: 1px solid #d7d7d7;
     width: 100%;
-    height: 105px;
+    height: 30%;
 }
 .P_ListLi > dl > dd {
     margin-top: 5px;

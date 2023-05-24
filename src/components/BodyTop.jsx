@@ -26,7 +26,7 @@ const BodyTop = () => {
                     <div className={"bRight"}>
                         <li className={"name"}>{data.name}</li>
                         <li className={"content_title"}>{data.title}</li>
-                        <li className={"content"}>{data.content.substring(0, 42).padEnd(4,".")}</li>
+                        <li className={"content"}>{data.content.substring(0, 30).padEnd(4,".")}</li>
                     </div>
                 </ul>
             </div>
