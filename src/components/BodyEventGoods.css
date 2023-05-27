@@ -1,0 +1,44 @@
+.eventGoods{
+    width: 100%;
+    height: 242px;
+    border: 1px solid #d7d7d7;
+    margin-top: 40px;
+    display: block;
+    margin-bottom: 400px;
+}
+.eventGoods > .eventButton{
+    width: 100%;
+    height: 14%;
+    display: flex;
+    float: left;
+}
+.eventGoods > .eventButton > img{
+    width: 33.3%;
+    height: 100%;
+}
+.eventContent {
+    width: 96%;
+    height: 78%;
+    padding: 2%;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+.eventContent > img{
+    width: 50%;
+    height: 90%;
+    position: absolute;
+    z-index: 2;
+}
+.imgList {
+    position: absolute;
+    z-index: 1;
+    width: 50%;
+    height: 60%;
+}
+.imgList > ul{
+    display: flex;
+}
+.imgList > ul > li > img{
+    margin-left: 15px;
+}

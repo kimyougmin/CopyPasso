@@ -4,6 +4,7 @@ import "./BodyComponent.css"
 import BodyTop from "./BodyTop";
 import BodySubTop from "./BodySubTop";
 import BodyPopularGood from "./BodyPopularGood";
+import BodyEventGoods from "./BodyEventGoods";
 
 const BodyComponent = () => {
     return (
@@ -13,6 +14,7 @@ const BodyComponent = () => {
                 <BodyTop/>
                 <BodySubTop/>
                 <BodyPopularGood/>
+                <BodyEventGoods/>
             </div>
             <div className={"right"}>
 

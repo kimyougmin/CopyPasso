@@ -1,7 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import "./BodyPopularGood.css"
 import BodyPopularGoodList from "./BodyPopularGoodList";
-import {logDOM} from "@testing-library/react";
 import BodyPopularPurchase from "./BodyPopularPurchase";
 
 
@@ -49,15 +48,14 @@ function BodyPopularGood(props) {
         {manufacturers:"가와사키", forSale:"z125", title :"z125 스탠다드 모델 구입 희망", address:"부산", MM: "05",day:"12"},
         {manufacturers:"가와사키", forSale:"z125", title :"z125 스탠다드 모델 구입 희망", address:"부산", MM: "05",day:"12"},
         {manufacturers:"가와사키", forSale:"z125", title :"z125 스탠다드 모델 구입 희망", address:"부산", MM: "05",day:"12"},
-        {manufacturers:"가와사키", forSale:"z125", title :"z125 스탠다드 모델 구입 희망", address:"부산", MM: "05",day:"12"},
-        {manufacturers:"가와사키", forSale:"z125", title :"z125 스탠다드 모델 구입 희망", address:"부산", MM: "05",day:"12"},
-        {manufacturers:"가와사키", forSale:"z125", title :"z125 스탠다드 모델 구입 희망", address:"부산", MM: "05",day:"12"},
-        {manufacturers:"가와사키", forSale:"z125", title :"z125 스탠다드 모델 구입 희망", address:"부산", MM: "05",day:"12"}];
+        {manufacturers:"가와사키", forSale:"z125", title :"z125 스탠다드 모델 구입 희망", address:"부산", MM: "05",day:"12"},];
+
     let changeImg = ["./Body/contents/main_tab_new_01_none.gif",
         "./Body/contents/main_tab_new_02_none.gif",
         "./Body/contents/main_tab_new_03_none.gif",
         "./Body/contents/main_tab_new_04_none.gif",
         "./Body/contents/main_tab_new_05_none.gif"];
+
     let tempImg = changeImg;
 
     const [img, setImg] = useState(changeImg);
@@ -107,7 +105,7 @@ function BodyPopularGood(props) {
 
 
     return (
-        <div>
+        <div className={"bodyPopularGoods"}>
             <dl className={"typeNew"}>
                 <dd className={"hand"}>
                     <img
@@ -137,12 +135,27 @@ function BodyPopularGood(props) {
                 </dd>
             </dl>
             <div className={"PopularList"}>
-                {listNum == 4 ?popularList.map((data, index) => {
-                    return <BodyPopularPurchase key={index} props={data}/>
-                }) : popularList.map((data,index) => {
-                   return <BodyPopularGoodList key={index} props={data}/>
-                })}
-
+                {listNum == 4 ?
+                    <div className={"purchaseList"}>
+                        <div className={"from"}>
+                            <div className={"fromHeader"}>
+                                <b style={{marginLeft : "40px"}}>희망 매물</b>
+                                <b>제목</b>
+                                <div style={{display: "flex", marginRight : "30px"}}>
+                                    <b style={{marginRight : "20px"}}>지역</b>
+                                    <b>등록일</b>
+                                </div>
+                            </div>
+                            {popularList.map((data, index) => {
+                            return <BodyPopularPurchase key={index} props={data}/>
+                            })}
+                        </div>
+                    </div>
+                    :
+                    popularList.map((data,index) => {
+                        return <BodyPopularGoodList key={index} props={data}/>
+                    })
+                }
             </div>
         </div>
     );
