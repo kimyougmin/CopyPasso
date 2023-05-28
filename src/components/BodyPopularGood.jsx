@@ -49,7 +49,6 @@ function BodyPopularGood(props) {
         {manufacturers:"가와사키", forSale:"z125", title :"z125 스탠다드 모델 구입 희망", address:"부산", MM: "05",day:"12"},
         {manufacturers:"가와사키", forSale:"z125", title :"z125 스탠다드 모델 구입 희망", address:"부산", MM: "05",day:"12"},
         {manufacturers:"가와사키", forSale:"z125", title :"z125 스탠다드 모델 구입 희망", address:"부산", MM: "05",day:"12"},];
-
     let changeImg = ["./Body/contents/main_tab_new_01_none.gif",
         "./Body/contents/main_tab_new_02_none.gif",
         "./Body/contents/main_tab_new_03_none.gif",
@@ -150,9 +149,9 @@ function BodyPopularGood(props) {
                             return <BodyPopularPurchase key={index} props={data}/>
                             })}
                         </div>
+
                     </div>
-                    :
-                    popularList.map((data,index) => {
+                    : popularList.map((data,index) => {
                         return <BodyPopularGoodList key={index} props={data}/>
                     })
                 }
