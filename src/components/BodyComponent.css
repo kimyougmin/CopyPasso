@@ -1,6 +1,6 @@
 .AppBody{
-    width: 70%;
-    margin-left: 16%;
+    width: 1000px;
+    margin-left: 20%;
     display: inline-block;
 }
 .AppBody > div {

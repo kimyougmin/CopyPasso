@@ -2,7 +2,6 @@ import React, {useState} from 'react';
 import "./BodyEventGoods.css";
 import EventGoodsComponent from "../components-new/main/event-good/EventGoodComponent";
 
-
 function BodyEventGoods(props) {
     const headers = [
         {
@@ -38,14 +37,13 @@ function BodyEventGoods(props) {
 
 
     const slider = () => {
-
         setTimeout(() => {
             if(left === 70){
                 setSliderCheck(1)
-                setLeft(41)
-            }else if(left === 41){
+                setLeft(48)
+            }else if(left === 48){
                 setSliderCheck(2)
-                setLeft(15)
+                setLeft(25)
             }else{
                 setSliderCheck(0)
                 setLeft(70)
@@ -83,9 +81,17 @@ function BodyEventGoods(props) {
                 })
                 }
             </div>
-            <div className={"eventContent"}>
-                <img src={"./Body/contents/eventgoods/goatskin_s_banner.jpg"}/>
-                {slider()}
+            {/*<div className={"eventContent"}>*/}
+            {/*    <img src={"./Body/contents/eventgoods/goatskin_s_banner.jpg"}/>*/}
+            {/*    {slider()}*/}
+            {/*</div>*/}
+
+            {/*<div className={"suggestionGood"}>*/}
+            {/*    <img src={"./Body/contents/eventgoods/main_event_h_direct.png"}/>*/}
+            {/*</div>*/}
+
+            <div className={"forSaleGood"}>
+
             </div>
         </div>
     );
