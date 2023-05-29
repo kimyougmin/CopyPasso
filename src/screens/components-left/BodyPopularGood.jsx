@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react';
 import "./BodyPopularGood.css"
 import BodyPopularGoodList from "./BodyPopularGoodList";
 import BodyPopularPurchase from "./BodyPopularPurchase";
-import {TabHeaderComponent} from "../components-new/main/popular-good/TabHeaderComponent";
+import {TabHeaderComponent} from "../../components-new/main/popular-good/TabHeaderComponent";
 
 const testData = [
     {src:"./Body/top/v4.jpeg",manufacturers: "두카티", title : "피니갈래 v4 RS 대형 바이크", year : 2022, distance : 12000, address:"부산"},

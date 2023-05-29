@@ -2,6 +2,13 @@ import React from 'react';
 import "./BodySubTopContent.css"
 
 function BodySubTopContent(props) {
+    const {
+        like,
+        img,
+        manufacturers,
+        name,
+        title
+    } = props;
 
 
     return (
@@ -10,16 +17,16 @@ function BodySubTopContent(props) {
                 <li className={"subTopList"}>
                     <dl>
                         <dt className={"hotGood"}>
-                            <img src={props.props.like} height={15}/>
+                            <img src={like} height={15}/>
                         </dt>
                         <dd className={"thumb"}>
-                            <img src={props.props.img}/>
+                            <img src={img}/>
                         </dd>
                         <dd className={"name"}>
-                            {props.props.manufacturers+"/"+props.props.name}
+                            {manufacturers+"/"+name}
                         </dd>
                         <dd className={"titleEllipsis"}>
-                            {props.props.title}
+                            {title}
                         </dd>
                     </dl>
                 </li>

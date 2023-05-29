@@ -1,6 +1,6 @@
 import React from 'react';
-import NavigationBar from "../components/NavigationBar";
-import BodyComponent from "../components/BodyComponent";
+import NavigationBar from "./components-left/NavigationBar";
+import BodyComponent from "./BodyComponent";
 import "./mainScreen.css"
 
 function MainScreen(props) {

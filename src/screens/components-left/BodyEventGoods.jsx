@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import "./BodyEventGoods.css";
-import EventGoodsComponent from "../components-new/main/event-good/EventGoodComponent";
-import ForSaleGood from "../components-new/main/event-good/ForSaleGood";
+import EventGoodsComponent from "../../components-new/main/event-good/EventGoodComponent";
+import ForSaleGood from "../../components-new/main/event-good/ForSaleGood";
 
 const forSaleGoodList = [
     {

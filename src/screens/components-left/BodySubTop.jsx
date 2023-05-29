@@ -14,8 +14,15 @@ function BodySubTop(props) {
 
     return (
         <div className={"subTopContainer"}>
-            {fors.map((data, key) => {
-               return <BodySubTopContent key={key} props={data}/>
+            {fors.map((e, key) => {
+               return <BodySubTopContent
+                   key={key}
+                   like={e.like}
+                   manufacturers={e.manufacturers}
+                   img={e.img}
+                   name={e.name}
+                   title={e.title}
+               />
             })}
         </div>
     );

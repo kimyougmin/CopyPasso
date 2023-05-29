@@ -1,5 +1,5 @@
 import React from 'react';
-import NewGoods from "../components-new/main/new-good/NewGoods";
+import NewGoods from "../../components-new/main/new-good/NewGoods";
 import "./BodyNewGoods.css"
 
 const testData0 = [

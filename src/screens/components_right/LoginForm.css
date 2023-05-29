@@ -1,0 +1,19 @@
+.loginForm{
+    width: 99%;
+    height: 103px;
+    border: 1px solid #d7d7d7;
+    margin: 5px 0 20px 0;
+    text-align: center;
+}
+.loginForm > img{
+
+    width: 95%;
+    margin: 30px 0 10px 0;
+}
+.loginUl{
+    display: flex;
+    justify-content: space-between;
+}
+.loginUl > li{
+    font-size: 8px;
+}

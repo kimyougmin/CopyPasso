@@ -2,7 +2,7 @@
     float: left;
     margin-top: 13px;
     margin-right: 29px;
-    width: 31%;
+    width: 100%;
     height: 215px;
 }
 dd{
@@ -12,12 +12,12 @@ dd{
 }
 .subTopList > dl > .thumb{
     width: 95%;
-    height: 135px;
+    height: 152px;
     margin-top: 10px;
 }
 .subTopList > dl > .thumb > img{
     width: 100%;
-    height: 135px;
+    height: 152px;
 }
 .subTopList > dl >  .name{
     width: 223px;
