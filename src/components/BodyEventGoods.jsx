@@ -80,7 +80,6 @@ function BodyEventGoods(props) {
         return <div className={"slider"} style={{marginLeft : left+"%"}}>
             {eventGood.map((e, index) => {
                 const isSelected = index === sliderCheck;
-                console.log(e, isSelected);
                 if(isSelected){
                     return <img src={e.img}/>
                 }else{

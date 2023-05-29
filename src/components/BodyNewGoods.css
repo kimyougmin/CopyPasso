@@ -1,0 +1,33 @@
+.bodyNewGoods {
+    margin-top: 30px;
+}
+.newGoodsHeader{
+    margin-bottom: 10px;
+
+}
+.newGoodsList {
+    width: 100%;
+    height: 100px;
+    display: flex;
+}
+.newGoodsList > div > img{
+    width: 90%;
+    height: 100%;
+}
+.newGoodsList > .list {
+    margin-right: 1%;
+    width: 100%;
+    height: 90%;
+}
+.newGoodsList > .lastList {
+    margin-right: 0;
+    width: 100%;
+    height: 90%;
+}
+.newGoodsList > div{
+    display: block;
+}
+.newGoodsList > div > b{
+    margin-top: 10px;
+    display: block;
+}
