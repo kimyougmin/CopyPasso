@@ -1,6 +1,34 @@
 import React, {useState} from 'react';
 import "./BodyEventGoods.css";
 import EventGoodsComponent from "../components-new/main/event-good/EventGoodComponent";
+import ForSaleGood from "../components-new/main/event-good/ForSaleGood";
+
+const forSaleGoodList = [
+    {
+        title : "앱솔 블루투스 이어폰1",
+        price : "170000"
+    },
+    {
+        title : "앱솔 블루투스 이어폰2",
+        price : "170000"
+    },
+    {
+        title : "앱솔 블루투스 이어폰3",
+        price : "170000"
+    },
+    {
+        title : "앱솔 블루투스 이어폰4",
+        price : "170000"
+    },
+    {
+        title : "앱솔 블루투스 이어폰5",
+        price : "170000"
+    },
+    {
+        title : "앱솔 블루투스 이어폰5",
+        price : "170000"
+    },
+];
 
 function BodyEventGoods(props) {
     const headers = [
@@ -35,7 +63,6 @@ function BodyEventGoods(props) {
 
 
 
-
     const slider = () => {
         setTimeout(() => {
             if(left === 70){
@@ -65,6 +92,42 @@ function BodyEventGoods(props) {
         </div>
 
     }
+
+    const eventContent = () =>{
+        if(listNum === 0){
+            return <div className={"eventContent"}>
+                <img src={"./Body/contents/eventgoods/goatskin_s_banner.jpg"}/>
+                {slider()}
+            </div>
+        }
+        return null
+    }
+
+    const suggestionGood = () =>{
+        if(listNum === 1){
+            return <div className={"suggestionGood"}>
+                <img src={"./Body/contents/eventgoods/main_event_h_direct.png"}/>
+            </div>
+        }
+        return null
+    }
+
+    const forSaleGood = () =>{
+        if(listNum === 2){
+            return <div className={"forSaleGood"}>
+                {forSaleGoodList.map((e, index) => {
+                    return <ForSaleGood
+                        title={e.title}
+                        price={e.price}
+                        key={index}/>
+                })
+                }
+            </div>
+        }
+        return null
+    }
+
+
     return (
         <div className={"eventGoods"}>
             <div className={"eventButton"}>
@@ -81,18 +144,9 @@ function BodyEventGoods(props) {
                 })
                 }
             </div>
-            {/*<div className={"eventContent"}>*/}
-            {/*    <img src={"./Body/contents/eventgoods/goatskin_s_banner.jpg"}/>*/}
-            {/*    {slider()}*/}
-            {/*</div>*/}
-
-            {/*<div className={"suggestionGood"}>*/}
-            {/*    <img src={"./Body/contents/eventgoods/main_event_h_direct.png"}/>*/}
-            {/*</div>*/}
-
-            <div className={"forSaleGood"}>
-
-            </div>
+            {eventContent()}
+            {suggestionGood()}
+            {forSaleGood()}
         </div>
     );
 }
