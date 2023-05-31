@@ -8,6 +8,7 @@ import BodyEventGoods from "./components-left/BodyEventGoods";
 import BodyNewGoods from "./components-left/BodyNewGoods";
 import LoginForm from "./components_right/LoginForm";
 import RightSubTop from "./components_right/RightSubTop";
+import RightMedia from "./components_right/RightMedia";
 
 const BodyComponent = () => {
     return (
@@ -24,6 +25,7 @@ const BodyComponent = () => {
                 <div className={"right"} style={{display: "block"}}>
                     <LoginForm/>
                     <RightSubTop/>
+                    <RightMedia />
                 </div>
             </div>
         </div>

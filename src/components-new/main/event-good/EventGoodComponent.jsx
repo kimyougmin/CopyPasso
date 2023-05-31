@@ -8,6 +8,7 @@ const EventGoodComponent = (props) => {
         onMouseOver
     } = props;
 
+
     return (
         <img src={isSelected ? imgOver : img}
              onMouseOver={onMouseOver}

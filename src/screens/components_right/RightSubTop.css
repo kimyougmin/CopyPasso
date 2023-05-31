@@ -11,12 +11,34 @@
     width: 90%;
     height: 100%;
     display: flex;
+
 }
 .thumbMain {
     margin-right: 1%;
-    width: 98%;
+    width: 100%;
     height: 152px;
+    border: 2px solid #d7d7d7;
 }
 .remoteSubTop{
     display: block;
+}
+.remoteSubTop > img{
+    margin-top: 1px;
+    display: block;
+}
+.rightName{
+    width: 223px;
+    height: 20px;
+    font-weight: bold;
+    font-size: 13px;
+    padding: 10px 0 1px 3px;
+}
+.rightTitleEllipsis{
+    width: 223px;
+    height: 20px;
+    padding: 0 0 0 3px;
+    color: #959595;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
