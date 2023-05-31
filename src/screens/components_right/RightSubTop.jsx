@@ -43,7 +43,6 @@ function RightSubTop(props) {
 
     const [goodObject, setGoodObject] = useState(subTopDate[0]);
     const [isClick, setIsClick] = useState(0);
-    const [isOver, setIsOver] = useState(0);
 
     const onClickEvent = (index) =>{
         setGoodObject(subTopDate[index])
@@ -66,7 +65,7 @@ function RightSubTop(props) {
                             <img className={"thumbMain"} src={goodObject.contentImg}/>
                             <div className={"remoteSubTop"}>
                                 {goodsLike.map((e, index) => {
-                                    let isSelected = index === isClick;
+                                    const isSelected = index === isClick;
 
                                     return <img
                                         key={index}

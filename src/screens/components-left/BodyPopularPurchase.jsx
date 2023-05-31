@@ -4,7 +4,7 @@ import "./BodyPopularPurchase.css"
 function BodyPopularPurchase(props) {
 
     return (
-        <div className={"from"}>
+        <div className={"bodyPopularPurchase"}>
             <div className={"fromHeader"}>
                 <b style={{marginLeft : "40px"}}>{props.props.manufacturers}/{props.props.forSale}</b>
                 <b>{props.props.title}</b>
