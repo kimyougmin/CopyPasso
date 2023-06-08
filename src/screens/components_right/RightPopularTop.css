@@ -1,0 +1,6 @@
+.rightPopularTop {
+    margin-top: 31px;
+}
+.rightPopularTop > .popularTopHeader {
+    display: flex;
+}

@@ -9,6 +9,7 @@ import BodyNewGoods from "./components-left/BodyNewGoods";
 import LoginForm from "./components_right/LoginForm";
 import RightSubTop from "./components_right/RightSubTop";
 import RightMedia from "./components_right/RightMedia";
+import RightPopularTop from "./components_right/RightPopularTop";
 
 const BodyComponent = () => {
     return (
@@ -26,6 +27,7 @@ const BodyComponent = () => {
                     <LoginForm/>
                     <RightSubTop/>
                     <RightMedia />
+                    <RightPopularTop />
                 </div>
             </div>
         </div>
